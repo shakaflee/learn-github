@@ -2,12 +2,12 @@
 
 - **OS**: Windows 10
 - **Software**: Git Bash, Visual Studio Code, 
-- **Target**: Create a local repo,edit file locally,then push to remote for host.
+- **Target**: Create a local repo, edit file locally, then push to remote for host.
 
 Table of this content:
 
 - [Step 1: Get tools handy](#step-1-get-tools-handy)
-- [Step 2: Create a local repo with Git Bash](#step-2-create-a-local-repo-with-git-bash)
+- [Step 2: Create a local repo with Git](#step-2-create-a-local-repo-with-git)
 - [Step 3: Add this repo to Github using Git](#step-3-add-this-repo-to-github-using-git)
 
 ## Step 1: Get tools handy
@@ -31,13 +31,13 @@ Download the latest version of Git for windows at https://git-scm.com/downloads
 
 Download the latest version of Visual Studio Code for windows at https://code.visualstudio.com/Download
 
-## Step 2: Create a local repo with Git Bash
+## Step 2: Create a local repo with Git
 
-I want to make this repo locate at `d:/learn-github` on my local computer, so first we create a directory here:
+I want to make this repo locate at `d:/learn-github` on my local computer, so first I create a directory here:
 ```
 mkdir d:/learn-github
 ```
-then I change our current dir there:
+then I change my current directory there:
 ```
 cd d:/learn-github
 ```
@@ -45,7 +45,7 @@ then I init this repo:
 ```
 git init
 ```
-After this , I have done the job. 
+After this, I have done this part of work. 
 
 As I need capture this I make another dir so I can put a screenshot image here.
 ```
@@ -69,7 +69,7 @@ But as it can't be rendered on Github, so I change the path to:
 This change apply to all other images in this article too.  
 <br>
 
-Since I write this article at `d:/README.md`, so now I'll move it to our repo.
+Since I write this article at `d:/README.md`, so now I'll move it to my new created repo.
 ```
 mv ../README.md ./
 ```
@@ -81,12 +81,12 @@ Now my repo have some files: directory, image, text file, so it's time I push th
 
 ## Step 3: Add this repo to Github using Git
 
-As I can't create a repo with Git on Github, so I need use Git CMD or just create one on github first. Here I choose the second way. For detail see there , [this article](https://docs.github.com/en/get-started/importing-your-projects-to-github/importing-source-code-to-github/adding-locally-hosted-code-to-github?platform=windows) tells how to step by step.
+As I can't create a repo with Git on Github, so I need use Git CMD or just create one on github manually first. Here I choose the second way. For detail see there , [this article](https://docs.github.com/en/get-started/importing-your-projects-to-github/importing-source-code-to-github/adding-locally-hosted-code-to-github?platform=windows) tells how to step by step.
 
 What I learned from this is:
 >You cannot create a repo on github using git bash. Git and github are different things. Github is a platform that let's you host and collaborate on code while git is the version control tool used.
 
-This quote is I google the same question and find the answer at [stackoverflow](https://stackoverflow.com/questions/11693288/how-to-create-a-new-repo-at-github-using-git-bash)
+This quote is I google the same question and find the answer at [stackoverflow.](https://stackoverflow.com/questions/11693288/how-to-create-a-new-repo-at-github-using-git-bash)
 
 So follow the tutorial:
 
@@ -121,7 +121,7 @@ git commit -m "First commit"
 - `commit` is like a snapshot of our repo.
 - These commits are snapshots of our entire repository at specific times.
 
-4. add the url fo the remote repo where my local repo will be pushed to.
+4. add the url of the remote repo where my local repo will be pushed to.
 ```
 git remote add origin https://github.com/shakaflee/learn-github.git
 # Sets the new remote
@@ -136,7 +136,7 @@ git remote -v
 - `remote` is simply an alias that store the URL of repositories.
 - `origin` is an alias on your system for a particular remote repository. It's not actually a property of that repository.
 - I find these good answer at [stackoverflow](https://stackoverflow.com/questions/9529497/what-is-origin-in-git) #722.
-- Also there si another [answer](https://stackoverflow.com/questions/10588291/git-branching-master-vs-origin-master-vs-remotes-origin-master) #233 to this question.
+- Also there is another [answer](https://stackoverflow.com/questions/10588291/git-branching-master-vs-origin-master-vs-remotes-origin-master) #233 to this question.
 
 5. push changes in my local repo to Github
 ```
@@ -165,7 +165,7 @@ But finally, I made it.
 
 ![push-sucess](images/push-sucess.png)
 
-To capature the screen, I made more snapshots and edit this README.md file too, so I'll commit again so these changes will sync at remote.
+To capature the screen, I made more snapshots and edit this README.md file too, so I'll commit again so these changes will sync with remote.
 
-And after a short view on github I find images don't get rendered, I guess that is because the path is absolute on my local PC, to show these images correctily I should use relative path, so I'll change the images path too.
+And after a short view on github I find images don't get rendered, I guess that is because the path is absolute on my local PC, to show these images correctly I should use relative path, so I'll change the images path too.
 
